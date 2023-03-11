@@ -1,6 +1,78 @@
+@media all and (max-width:1400px){
+    .aus_der_single_item:last-child p {
+        width: 100%;
+    }
+    .aus_der_single_item:first-child p{
+        width: 100%;
+    }
+    .client_project_area_section:after {
+        top: -160px;
+        left: -42px;
+        width: 17%;
+        height: 65%;
+    }
+    .bodyUpCont6 {
+        padding-right: 0px;
+    }
+    .bodyUpCont5 {
+        padding-right: 0px;
+    }
+    .bodyUpCont4 p {
+        padding-right: 0px;
+    }
+    .bodyUpCont3 {
+        padding-right: 0px;
+    }
+    .bodyUpCont2 p {
+        padding-right: 0px;
+    }
+    .bodyUpCont1{
+        padding-right: 0px;
+    }
+    .footer_single_navbar_item{
+        padding-left: 0px;
+    }
+    .footer_logo_location_area p{
+        padding-right: 30px;
+    }
+}
 @media all and (max-width:1199px){
     .header_logo a img {
         width: 100px;
+    }
+    .bestProducts_cont p {
+        padding-right: 0px;
+    }
+    .bestProducts_area {
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                    -ms-grid-row-align: flex-start;
+                align-items: flex-start;
+    }
+    .container_wrapper {
+        max-width: 100%;
+    }
+    .carousel_area_section{
+        padding: 100px 0px;
+    }
+    .firstBodyCont {
+        padding-right: 50px;
+    }
+    .bodyContLeft {
+        padding-left: 0px;
+    }
+    .bodyUpCont4 p {
+        padding-right: 0px;
+    }
+    .bodyUpCont3 {
+        padding-right: 0px;
+        padding-left: 40px;
+    }
+    .bodyUpCont5 {
+        padding: 0px 30px;
+    }
+    .bodyUpCont6 {
+        padding-right: 60px;
     }
     
 }
@@ -15,14 +87,22 @@
 
 @media all and (min-width:992px){
     .header_navbar ul{
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
         display: flex !important;
     }
 }
 @media all and (max-width:991px){
     .header_profile_area_wrap{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-between;
-        align-items: center;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
     }
     .mobile_bars{
         margin-left: 30px;
@@ -36,9 +116,17 @@
         position: relative;
     }
     .header_navbar ul {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: flex-start;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                    -ms-grid-row-align: flex-start;
+                align-items: flex-start;
         position: absolute;
         bottom: -100%;
         display: none;
@@ -60,6 +148,116 @@
     .banner_area_section{
         position: relative;
     }
+    .bestProducts_area {
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                    -ms-grid-row-align: flex-start;
+                align-items: flex-start;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: start;
+            -ms-flex-pack: start;
+                justify-content: flex-start;
+    }
+    .bestProducts_single_item {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 45%;
+                flex: 0 0 45%;
+        margin-right: 15px;
+        margin-bottom: 20px;
+    }
+    .ausDer_nuture_product {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .aus_der_single_item:first-child p{
+       margin-bottom: 20px;
+       text-align: center;
+       padding-right: 0px;
+    }
+    .aus_der_single_item:last-child p {
+        margin-top: 20px;
+        text-align: center;
+        padding-left: 0px;
+    }
+    .firstBodyCont {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    h2{
+        font-size: 40px;
+    }
+    .client_project_area_section:after {
+        width: 25%;
+    }
+    .client_projects_area h2 {
+        width: 100%;
+    }
+    .client_area_wrapper {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+    }
+    .client_single_item {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 30%;
+                flex: 0 0 30%;
+        margin-bottom: 30px;
+    }
+    .bodyUpCont3 p {
+        padding-right: 0px;
+    }
+    .body_content_area_section3:after {
+        display: none;
+    }
+    .grow_business_area_section {
+       padding: 60px 0px 55px 0px;
+    }
+    .grow_business_area_section:after {
+        display: none;
+    }
+    .subscription_area_section:after {
+        display: none;
+    }
+    .subscription_submit input[type="submit"] {
+        padding: 10px 13px;
+        font-size: 12px;
+    }
+    .subscription_submit input[type="text"] {
+        padding: 20px 25px;
+    }
+    .subscription_submit input[type="text"]::-webkit-input-placeholder{
+        font-size: 14px;
+    }
+    .subscription_submit input[type="text"]::-moz-placeholder{
+        font-size: 14px;
+    }
+    .subscription_submit input[type="text"]:-ms-input-placeholder{
+        font-size: 14px;
+    }
+    .subscription_submit input[type="text"]::placeholder{
+        font-size: 14px;
+    }
+    .subscription_area_right {
+        padding: 60px 0px 50px 50px;
+    }
+    .subscription_area_right p {
+        padding: 30px 0px 35px 0px;
+    }
+    .footer_area {
+        -webkit-box-orient:vertical;
+        -webkit-box-direction:normal;
+            -ms-flex-direction:column;
+                flex-direction:column;
+    }
+    .footer_navberLink_area {
+        margin-top: 40px;
+    }
+    
 }
 
 
@@ -67,6 +265,118 @@
     .headerTop_area_section {
         display: none;
     }
+    .container_wrapper {
+        /* padding: 0px 0px; */
+    }
+    .banner_area_section {
+        padding: 100px 0px;
+    }
+    h1 {
+        font-size: 50px;
+    }
+    .Custom_btn a {
+        padding: 15px 30px;
+        font-size: 14px;
+    }
+    .bestProducts_img a img {
+        width: 55px;
+        margin-right: 20px;
+    }
+    .aus_der_nuture_area h2 {
+        width: 100%;
+    }
+    h2{
+        font-size: 35px;
+    }
+    .carousel_area_section{
+        padding: 100px 0px;
+    }
+    .bodyContLeft {
+        padding-left: 0px;
+    }
+    .firstBodyCont {
+        padding: 0px;
+    }
+    .bodyUpCont2 p {
+        padding-right: 0px;
+    }
+    .client_project_area_section:after {
+        display: none;
+    }
+    .client_single_item {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 45%;
+                flex: 0 0 45%;
+    }
+    .body_content_area_section {
+        padding: 50px 0px;
+    }
+    .secondbodycontent{
+        padding-top: 0px;
+    }
+    .grow_business_area {
+        width: 100%;
+    }
+    .grow_business_area p {
+        padding: 30px 0px;
+    }
+    .grow_business_area h2 {
+        font-size: 35px;
+    }
+    .bodyUpCont5 {
+        padding: 0px 0px;
+    }
+    .body_content_img a img{
+        height: 100%;
+    }
+    .bodyUpCont6{
+        padding-right: 0px;
+    }
+    .subscription_area {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .subscription_area_right p {
+        width: 500px;
+    }
+    .subscription_area_left a img {
+        width: 100%;
+        height: 100%;
+    }
+    .subscription_area_right{
+        height: auto;
+    }
+    .subscription_area_right {
+        padding: 50px 0px 50px 50px;
+    }
+    .footer_navberLink_area {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+    }
+    .footer_single_navbar_item {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 50%;
+                flex: 0 0 50%;
+        margin-bottom: 20px;
+    }
+    .footer_bottom_area {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: start;
+            -ms-flex-align: start;
+                    -ms-grid-row-align: flex-start;
+                align-items: flex-start;
+    }
+    #footer_paymentOrder {
+        margin-bottom: 20px;
+    }
+
+    div#footer_paymentOrder{-webkit-box-ordinal-group: 2;-ms-flex-order: 1;order: 1;}
+    div#footer_copyOrder{-webkit-box-ordinal-group: 3;-ms-flex-order: 2;order: 2;}
 }
 
 
@@ -82,5 +392,99 @@
     }
     .header_navbar ul{
         top: 70px;
+    }
+    .header_profile_area .form-select {
+        margin-left: 5px;
+    	margin-top: 5px;
+    }
+    .mobile_bars {
+        margin-left: 0px;
+    }
+    .banner_area_section h1 {
+       width: 100%;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    .banner_area_section p {
+        font-size: 20px;
+        width: 100%;
+    }
+    .bestProducts_area {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+    .client_single_item {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
+    }
+    .bodyUpCont5 h2 {
+        padding-right: 0px;
+    }
+    .subscription_area_right p {
+        width: 100%;
+        padding-right: 10px;
+    }
+    .subscription_area_right {
+        padding: 50px 0px 50px 20px;
+    }
+    .subscription_area_right h1 {
+        font-size: 35px;
+    }
+    .footer_area_section {
+        padding: 50px 10px;
+    }
+    .footer_logo_location_area p {
+        padding-right: 0px;
+    }
+    .footer_socialMedia a {
+        font-size: 14px;
+        margin-right: 20px;
+        width: 25px;
+        height: 25px;
+    }
+    .header_area_section{
+        padding: 0px 0px;
+    }
+    .footer_payment_area {
+        padding-top: 0px;
+    }
+    
+    
+}
+
+
+@media all and (max-width:450px){
+    .footer_payment_group a img {
+        width: 50px;
+    }
+    .footer_payment_group a.paygro2 img {
+        width: 25px;
+    }
+    .payment_method a img {
+        width: 25px;
+        margin-left: 10px;
+    }
+    .payment_method {
+        margin-top: 20px;
+    }
+    .footer_copywrith_img a.copy_last_child img {
+        width: 55px;
+        margin-left: 20px;
+    }
+    .footer_copywrith_img a img {
+        width: 66px;
+    }
+    .footer_bottom_area{
+        padding-top: 0px;
+    }
+    .bestProducts_area_section{
+        padding: 0px;
+    }
+    .header_logo a img {
+        width: 55px;
     }
 }

@@ -24,7 +24,7 @@ ul{
 }
 p{
 	color: #575757;
-	font-size: 22px;
+	font-size: 20px;
 	font-weight: 400;
 	line-height: 28px;
 	font-family: 'Marcellus', serif;
@@ -67,6 +67,15 @@ h2{
 }
 .mobile_bars{
 	display: none;
+}
+.container_wrapper {
+	max-width: 1680px;
+	margin: auto;
+	width: 100%;
+	padding: 0px 50px;
+}
+.container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+	max-width: inherit;
 }
 /*
 ===================================================================
@@ -190,6 +199,43 @@ h2{
 .header_profile_area a img{
 	width: 25px;
 }
+#languageSelect {
+	background: transparent;
+	border: none;
+	color: #fff;
+}
+.header_profile_area .form-select:focus {
+	border-color: transparent;
+	outline: 0;
+	box-shadow: 0 0 0 .25rem transparent;
+}
+.header_profile_area .form-select {
+	display: block;
+	width: 100%;
+	padding: 1.6px 40px 6px 12px;
+	padding: .100rem 2.5rem .375rem .75rem;
+	font-size: 16px;
+	font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #212529;
+	background-color: #fff;
+	background-image: url('../images/down.png');
+	background-repeat: no-repeat;
+	background-position: right 12px center;
+	background-position: right .75rem center;
+	background-size: 30px 20px;
+	border: 1px solid #ced4da;
+	border-radius: .25rem;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: transparent;
+	border: navajowhite;
+	color: #fff;
+	margin-top: 10px;
+	margin-left: 15px;
+}
 /*
 ===================================================================
                   End Header Area CSS
@@ -235,13 +281,14 @@ h2{
 	background: url('../images/Noisebest.png') no-repeat scroll 0 0 / cover;
 	background-color: #FCF6EF;
 	position: relative;
+	overflow: hidden;
 }
 .bestProducts_area_section:after {
 	content: "";
 	position: absolute;
 	background: url(../images/afterl.png);
 	top: 430px;
-	left: 0;
+	left: -40px;
 	bottom: 0;
 	right: 0;
 	background-repeat: no-repeat;
@@ -258,7 +305,7 @@ h2{
 	-webkit-box-pack: center;
 	    -ms-flex-pack: center;
 	        justify-content: center;
-	padding: 50px 50px;
+	padding: 50px 0px;
 	border-bottom: 1px solid rgba(0, 0, 0, .2);
 
 
@@ -285,7 +332,7 @@ h2{
 	color: #575757;
 	font-size: 16px;
 	font-weight: 300;
-	padding-right: 215px;
+	padding-right: 100px;
 	padding-top: 5px;
 }
 
@@ -366,7 +413,7 @@ h2{
 ===================================================================
 */
 .carousel_area_section{
-	padding: 100px 0px 100px 200px;
+	padding: 100px 0px 100px 0px;
 	padding-right: 0px;
 }
 .carousel_heading h2{
@@ -459,17 +506,17 @@ h2{
 
 .carousel_area_wrapper.owl-carousel .owl-item img{
 	display: block;
-	width: 300px;
+	width: 230px;
 	margin: auto;
 }
 .carousel_area_wrapper .owl-prev {
 	position: absolute;
-	left: -60px;
+	left: 0px;
 	top: 35%;
 }
 .carousel_area_wrapper .owl-next {
 	position: absolute;
-	right: 60px;
+	right: 0px;
 	top: 35%;
 }
 .carousel_area_wrapper .owl-prev i,
@@ -517,12 +564,12 @@ h2{
 }
 .bestProduts_carousel .owl-prev {
 	position: absolute;
-	left: -60px;
+	left: 0px;
 	top: 35%;
 }
 .bestProduts_carousel .owl-next {
 	position: absolute;
-	right: 60px;
+	right: 0px;
 	top: 35%;
 }
 .bestProduts_carousel .owl-prev i,
@@ -570,6 +617,7 @@ h2{
 }
 .body_content_area_section3{
 	position: relative;
+	overflow: hidden;
 }
 .body_content_area_section3:after{
 	content: "";
@@ -577,7 +625,7 @@ h2{
 	background: url(../images/afterl.png);
 	background-repeat: repeat;
 	top: 10px;
-	left: 0;
+	left: -40px;
 	bottom: 0;
 	right: 0;
 	background-repeat: no-repeat;
@@ -593,6 +641,10 @@ h2{
 	-o-object-fit: cover;
 	   object-fit: cover;
 }
+.body_content_img a iframe{
+	width: 100%;
+	height: 400px;
+}
 .body_content_cont h2{
 	padding-bottom: 30px;
 	padding-top: 20px;
@@ -601,13 +653,19 @@ h2{
 	padding-bottom: 20px;
 }
 .firstBodyCont {
-	padding-left: 100px;
-	width: 800px;
+	padding-left: 70px;
+	/* width: 800px; */
 	padding-right: 150px;
 }
 .secoundBodyCont{
-	padding-left: 200px;
-	width: 800px;
+	/* padding-left: 200px; */
+	/* width: 800px; */
+}
+.body_content_cont.secoundBodyCont.firstBodyCont3 {
+	padding-right: 100px;
+}
+.body_content_cont.secoundBodyCont.firstBodyCont3 p{
+	padding-right: 35px;
 }
 .secondbodycontent{
 	padding-top: 30px;
@@ -620,6 +678,32 @@ h2{
 }
 .firstBodyCont3 h2{
 	padding-right: 140px;
+}
+.bodyUpCont5 h2{
+	padding-right: 60px;
+}
+.bodyUpCont4 p{
+	padding-right: 160px;
+}
+.bodyUpCont3 {
+	padding-right: 190px;
+	padding-left: 100px;
+}
+.bodyUpCont3 p {
+	padding-right: 40px;
+}
+.bodyUpCont2 p{
+	padding-right: 100px;
+}
+.bodyUpCont5 {
+	padding-right: 190px;
+}
+.bodyUpCont6 {
+	padding-right: 150px;
+	/* padding-left: 120px; */
+}
+.bodyContLeft{
+	padding-left: 150px;
 }
 /*
 ===================================================================
@@ -783,6 +867,7 @@ h2{
 */
 .subscription_area_section{
 	position: relative;
+	overflow: hidden;
 }
 .subscription_area_section:after {
 	content: "";
@@ -790,13 +875,13 @@ h2{
 	background: url(../images/aftersub.png);
 	background-repeat: repeat;
 	background-repeat: repeat;
-	top: -34px;
+	top: -80px;
 	/* left: 0; */
 	bottom: 0;
-	right: -78px;
+	right: -55px;
 	background-repeat: no-repeat;
 	width: 12%;
-	height: 54%;
+	height: 70%;
 }
 .subscription_area{
 	display: -webkit-box;
@@ -810,15 +895,17 @@ h2{
 }
 .subscription_area_left a img{
 	width: 100%;
+	height: 450px;
 }
 .subscription_area_right{
-	padding: 150px 0px 80px 100px;
+	padding: 60px 0px 50px 100px;
+	height: 450px;
 	background: -webkit-linear-gradient(359.76deg, #DCDAC4 49.94%, #F3D08B 98.59%);
 	background: linear-gradient(90.24deg, #DCDAC4 49.94%, #F3D08B 98.59%);
 }
 .subscription_area_right h1{
 	color: #141514;
-	font-size: 52px;
+	font-size: 45px;
 	font-weight: 400;
 	line-height: 52px;
 	font-family: 'Marcellus', serif;
@@ -826,10 +913,10 @@ h2{
 }
 .subscription_area_right p {
 	color: #141514;
-	font-size: 22px;
+	font-size: 18px;
 	font-weight: 300;
 	line-height: 28px;
-	padding: 30px 270px 35px 0px;
+	padding:30px 200px 35px 0px;
 }
 .subscription_submit input[type="text"]{
 	background-color: #F2F0D9;
@@ -840,25 +927,25 @@ h2{
 }
 .subscription_submit input[type="text"]::-webkit-input-placeholder{
 	color: #141514;
-	font-size: 22px;
+	font-size: 18px;
 	font-weight: 400;
 	line-height: 28px;
 }
 .subscription_submit input[type="text"]::-moz-placeholder{
 	color: #141514;
-	font-size: 22px;
+	font-size: 18px;
 	font-weight: 400;
 	line-height: 28px;
 }
 .subscription_submit input[type="text"]:-ms-input-placeholder{
 	color: #141514;
-	font-size: 22px;
+	font-size: 18px;
 	font-weight: 400;
 	line-height: 28px;
 }
 .subscription_submit input[type="text"]::placeholder{
 	color: #141514;
-	font-size: 22px;
+	font-size: 18px;
 	font-weight: 400;
 	line-height: 28px;
 }
@@ -875,7 +962,10 @@ h2{
 	letter-spacing: 2px;
 	position: absolute;
 	top: 12px;
-	right: 180px;
+	right: 22%;
+}
+.subscription_area_section{
+	padding: 0px;
 }
 /*
 ===================================================================
@@ -901,7 +991,8 @@ h2{
 .footer_area_section{
 	background: url('../images/Noise.png') no-repeat scroll 0 0 / cover;
 	background-color: #1B2C29;
-	padding: 100px 0px 80px 0px;
+	padding-top: 100px;
+	padding-bottom: 80px;
 }
 .footer_area{
 	display: -webkit-box;
@@ -914,7 +1005,7 @@ h2{
 .footer_logo_location_area{
 	-webkit-box-flex: 0;
 	    -ms-flex: 0 0 40%;
-	        flex: 0 0 40%;
+	        flex: 0 0 35%;
 }
 .footer_logo_location_area a img{
 	width: 150px;
@@ -925,7 +1016,7 @@ h2{
 	font-weight: 400;
 	line-height: 28px;
 	font-family: 'Marcellus', serif;
-	padding: 30px 150px 30px 0px;
+	padding: 30px 200px 30px 0px;
 
 }
 .footer_socialMedia{
@@ -956,11 +1047,14 @@ h2{
 }
 .footer_navberLink_area{
 	-webkit-box-flex: 0;
-	    -ms-flex: 0 0 60%;
-	        flex: 0 0 60%;
+	    -ms-flex: 0 0 65%;
+	        flex: 0 0 65%;
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;	
+	-webkit-box-pack: justify;	
+	    -ms-flex-pack: justify;	
+	        justify-content: space-between;
 }
 .footer_single_navbar_item{
 	/* flex: 0 0 25%; */
